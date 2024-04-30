@@ -2,6 +2,14 @@
 
 This is a Neovim plugin designed to perform "Go to Definition" functionality in Rails ERB and Slim templates.
 
+
+
+
+https://github.com/mactunechy/rails-view-component-gd.nvim/assets/37017264/a65774a0-f662-48ef-8bc1-ac5e15010b72
+
+
+
+
 ## How it works
 
 The plugin is written in Lua and resides in the `rails-view-component-gd` directory. It uses Neovim's built-in LSP (Language Server Protocol) to provide "Go to Definition" functionality. When you're in an ERB or Slim file and you trigger the plugin via a keyboard shortcut, it will navigate to the definition of the component under your cursor.
