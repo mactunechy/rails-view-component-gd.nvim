@@ -14,11 +14,10 @@ The plugin is written in Lua and resides in the `rails-view-component-gd` direct
   "mactunechy/rails-view-component-gd.nvim",
   ft = { 'slim', 'erb'},
   keys = {
-    { "<leader>gd", "<cmd>lua require('rails-view-component-gd').open_class()<cr>", desc="Open ViewComponent Class" },
-    { "<leader>gk", "<cmd>lua require('rails-view-component-gd').open_template()<cr>", desc="Open ViewComponent Template" },
-    { "<leader>gs", "<cmd>lua require('rails-view-component-gd').open_spec()<cr>", desc="Open ViewComponent Spec" },
-    { "<leader>gv", "<cmd>lua require('rails-view-component-gd').toggle()<cr>", desc="Toggle Class and Template" },
-
+    { "<leader>gd", "<cmd>OpenViewComponentClass <CR>", desc="ViewComponent Class" },
+    { "<leader>gk", "<cmd>OpenViewComponentTemplate <CR>", desc="ViewComponent Template" },
+    { "<leader>gs", "<cmd>OpenViewComponentSpec <CR>", desc="ViewComponent Spec" },
+    { "<leader>gv", "<cmd>ToggleViewComponent <CR>", desc="Toggle ViewComponent ClassAndTemplate" },
   },
 }
 ```

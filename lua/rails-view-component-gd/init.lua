@@ -80,4 +80,11 @@ M.toggle        = function()
   open_file(destination)
 end
 
+M.setup = function()
+  vim.cmd("command! OpenViewComponentClass lua require('rails-view-component-gd').open_class()")
+  vim.cmd("command! OpenViewComponentTemplate lua require('rails-view-component-gd').open_template()")
+  vim.cmd("command! OpenViewComponentSpec lua require('rails-view-component-gd').open_spec()")
+  vim.cmd("command! ToggleViewComponent lua require('rails-view-component-gd').toggle()")
+end
+
 return M
