@@ -14,13 +14,14 @@ The plugin is written in Lua and resides in the `rails-view-component-gd` direct
   "mactunechy/rails-view-component-gd.nvim",
   ft = { 'slim', 'erb'},
   keys = {
-    { "<leader>gd", "<cmd>lua require('rails-view-component-gd').open_class()<cr>" },
-    { "<leader>gk", "<cmd>lua require('rails-view-component-gd').open_template()<cr>" },
+    { "<leader>gd", "<cmd>lua require('rails-view-component-gd').open_class()<cr>", desc="Go to ViewComponent class" },
+    { "<leader>gk", "<cmd>lua require('rails-view-component-gd').open_template()<cr>", desc="Go to ViewComponent template" },
   },
 }
 ```
 
 ## Usage
+
 After installing the plugin, you can use it in any ERB or Slim file. The exact usage may depend on your Neovim configuration and keybindings.
 
 ## Contributing
@@ -36,8 +37,6 @@ Contributions are always welcome! Here's how you can help:
 4. **Test your changes**: Ensure that your changes do not break any existing functionality.
 
 5. **Create a Pull Request**: Once you're satisfied with your changes, push your branch to your forked repository on GitHub. Then, open a Pull Request from your forked repository to the original repository.
-
-
 
 ## License
 
