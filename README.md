@@ -8,17 +8,16 @@ The plugin is written in Lua and resides in the `rails-view-component-gd` direct
 
 ## Installation
 
-To install the plugin, you need to have Neovim 0.5 or later. You can then use your favorite plugin manager. Here's an example using `vim-plug`:
-
 ```lua
-  {
-    "mactunechy/rails-view-component-gd.nvim",
-    ft = { 'slim', 'erb'},
-    keys = {
-      { "<leader>gd", "<cmd>lua require('rails-view-component-gd').open_class()<cr>" },
-      { "<leader>gk", "<cmd>lua require('rails-view-component-gd').open_template()<cr>" },
-    },
-  }
+-- lazy.nvim
+{
+  "mactunechy/rails-view-component-gd.nvim",
+  ft = { 'slim', 'erb'},
+  keys = {
+    { "<leader>gd", "<cmd>lua require('rails-view-component-gd').open_class()<cr>" },
+    { "<leader>gk", "<cmd>lua require('rails-view-component-gd').open_template()<cr>" },
+  },
+}
 ```
 
 ## Usage
